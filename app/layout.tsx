@@ -6,6 +6,9 @@ import Footer from "@/components/Footer";
 const BASE_URL = "https://itoito4.vercel.app";
 
 export const metadata: Metadata = {
+  verification: {
+    google: "PLwPyfbhUBBitP3ry_UFkWWvdvobrtPHresAvQDlDpo",
+  },
   title: {
     default: "itoito（イトイト）— 子どもの「やってみたい」をかなえる体験マッチング",
     template: "%s | itoito",
