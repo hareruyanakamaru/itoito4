@@ -93,7 +93,7 @@ async function sendAdminNotification(review: GuestReview | HostReview, expTitle:
     const { Resend } = await import("resend");
     const resend = new Resend(apiKey);
 
-    const BASE_URL = "https://itoito4.vercel.app";
+    const BASE_URL = "https://www.itoawase.jp";
 
     if (review.type === "guest") {
       const stars = (n: number) => "★".repeat(n) + "☆".repeat(5 - n);

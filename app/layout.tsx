@@ -3,7 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const BASE_URL = "https://itoito4.vercel.app";
+const BASE_URL = "https://www.itoawase.jp";
 
 export const metadata: Metadata = {
   verification: {

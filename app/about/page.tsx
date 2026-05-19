@@ -1,4 +1,10 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "運営者情報 | itoito",
+  description: "itoitoを運営する絲（いとあわせ）について。元公立中学校教師・中丸晴留哉が、子どもたちに本物の学び体験を届けるために立ち上げました。東京都江東区を拠点に活動しています。",
+};
 
 export default function AboutPage() {
   return (

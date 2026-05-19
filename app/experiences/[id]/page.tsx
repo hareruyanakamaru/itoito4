@@ -38,7 +38,7 @@ export async function generateMetadata({
   const exp = await getExperienceByIdWithKV(id);
   if (!exp) return {};
 
-  const BASE_URL = "https://itoito4.vercel.app";
+  const BASE_URL = "https://www.itoawase.jp";
   const ogImage =
     exp.images?.[0] ?? exp.image ?? "/images/bamboo-light.jpg";
   const dateLabel = exp.dateTo ? `${exp.date} 〜 ${exp.dateTo}` : exp.date;

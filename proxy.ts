@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 const LOGIN_PATH = "/admin/login";
 
-export function middleware(req: NextRequest) {
+export function proxy(req: NextRequest) {
   const { pathname } = req.nextUrl;
   const session = req.cookies.get("admin_session")?.value;
   const isLoggedIn = session === "authenticated";

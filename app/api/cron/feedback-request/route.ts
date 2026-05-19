@@ -11,7 +11,7 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
-  const BASE_URL = "https://itoito4.vercel.app";
+  const BASE_URL = "https://www.itoawase.jp";
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) {
     return NextResponse.json({ error: "RESEND_API_KEY未設定" }, { status: 500 });
