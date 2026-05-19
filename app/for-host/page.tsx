@@ -2,9 +2,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "パートナーになる | itoito",
+  title: "職人・教師・クリエイター募集 — 子どもに体験を届けるパートナーへ | itoito",
   description:
-    "あなたの得意なことを体験として届けよう。掲載無料・初期手数料ゼロ。料理・ものづくり・自然・探究——子どもたちと一緒につくる特別な時間を。",
+    "あなたのスキルや知識を子どもへの学び体験として提供しませんか？掲載無料・副業OK・日程は自由設定。東京・江東区エリアで活動する職人・元教師・クリエイター大募集。",
 };
 
 export default function ForHostPage() {

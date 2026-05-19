@@ -2,8 +2,8 @@ import Link from "next/link";
 import HostApplyForm from "@/components/HostApplyForm";
 
 export const metadata = {
-  title: "パートナー申請",
-  description: "itoito でパートナーとして体験を提供しませんか？申請フォームよりご応募ください。",
+  title: "パートナー申請 — 子ども向け体験を提供する | itoito",
+  description: "itoitoのパートナー申請フォーム。職人・教師・クリエイターの方、あなたの得意を江東区・東京の子どもたちへの学び体験として届けてください。掲載無料・3分で申請完了。",
 };
 
 export default function HostApplyPage() {

@@ -2,9 +2,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "itoito — やってみたい体験が、きっと見つかる",
+  title: "子どもの「やってみたい」を単発で体験できる | itoito",
   description:
-    "料理・ものづくり・自然探究など、ユニークな体験を提供するパートナーと参加者をつなぐプラットフォーム itoito。",
+    "月謝なし・単発OK。東京・江東区で職人や専門家と一緒に学ぶ体験マッチング。習い事以外で子どもの好きを見つけよう。料理・ものづくり・自然探究・アートなど多彩な学び体験を掲載中。",
 };
 
 export default function LpPage() {

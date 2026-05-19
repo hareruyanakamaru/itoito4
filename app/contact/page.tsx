@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "お問い合わせ | itoito",
-  description: "itoito へのお問い合わせはこちらから。",
+  description: "itoito（絲・いとあわせ）へのお問い合わせはこちら。体験への参加・パートナー登録・取材・法人連携など、お気軽にご連絡ください。",
 };
 
 export default function ContactPage() {

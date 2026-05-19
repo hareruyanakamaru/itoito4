@@ -2,6 +2,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "プライバシーポリシー | itoito",
+  description: "itoito（絲・いとあわせ）のプライバシーポリシー。個人情報の取り扱いについて説明します。",
 };
 
 export default function PrivacyPage() {

@@ -2,6 +2,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "利用規約 | itoito",
+  description: "itoito（絲・いとあわせ）の利用規約。サービスをご利用の前にご確認ください。",
 };
 
 export default function TermsPage() {

@@ -10,11 +10,11 @@ export const metadata: Metadata = {
     google: "PLwPyfbhUBBitP3ry_UFkWWvdvobrtPHresAvQDlDpo",
   },
   title: {
-    default: "itoito（イトイト）— 子どもの「やってみたい」をかなえる体験マッチング",
+    default: "itoito — 東京・江東区の子ども向け学び体験マッチング｜単発OK・習い事以外の体験を探す",
     template: "%s | itoito",
   },
   description:
-    "料理・竹細工・農業・絵本づくり——学校では出会えない大人と、教科書には載っていない体験。子どもの「なんで？」「やりたい！」に本気で向き合う体験マッチングプラットフォーム。",
+    "習い事じゃない、単発で参加できる子ども向け学び体験マッチング。江東区・東京東部エリアで、職人・教師・クリエイターと子どもをつなぐ。料理・ものづくり・自然・探究——本物に触れる体験がここにある。",
   metadataBase: new URL(BASE_URL),
   openGraph: {
     type: "website",
