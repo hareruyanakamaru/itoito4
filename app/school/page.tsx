@@ -176,7 +176,7 @@ export default function SchoolPage() {
         </div>
       </section>
 
-      {/* ── CTA ── */}
+      {/* ── CTA（学校向け） ── */}
       <section id="contact" style={{ background: "#1c3358", color: "#fff", textAlign: "center", padding: "72px 20px" }}>
         <h2 style={{ fontSize: "clamp(18px,3vw,26px)", fontWeight: 800, marginBottom: 12 }}>まずは、お気軽にご相談ください。</h2>
         <p style={{ opacity: .8, fontSize: 14, marginBottom: 36, lineHeight: 1.8 }}>
@@ -184,10 +184,6 @@ export default function SchoolPage() {
           学校の実態をお聞きした上で、最適なプランをご提案します。
         </p>
         <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap", marginBottom: 28 }}>
-          <a href="https://lin.ee/HiSCSkf" target="_blank" rel="noopener noreferrer"
-            style={{ background: "#06C755", color: "#fff", fontWeight: 700, padding: "13px 28px", borderRadius: 8, fontSize: 14, textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 8 }}>
-            💬 公式LINEで相談する
-          </a>
           <a href="mailto:itoawase0324@gmail.com"
             style={{ background: "#fff", color: "#1c3358", fontWeight: 700, padding: "13px 28px", borderRadius: 8, fontSize: 14, textDecoration: "none" }}>
             📧 メールで問い合わせ
@@ -197,10 +193,22 @@ export default function SchoolPage() {
             📞 090-9725-1572
           </a>
         </div>
-        <div style={{ fontSize: 13, opacity: .65, display: "flex", gap: 24, justifyContent: "center", flexWrap: "wrap" }}>
+        <div style={{ fontSize: 13, opacity: .65, display: "flex", gap: 24, justifyContent: "center", flexWrap: "wrap", marginBottom: 40 }}>
           <span>絲（いとあわせ）</span>
           <span>代表：中丸 晴留哉</span>
           <span>itoawase0324@gmail.com</span>
+        </div>
+
+        {/* 事業所向け */}
+        <div style={{ borderTop: "1px solid rgba(255,255,255,.2)", paddingTop: 36 }}>
+          <p style={{ fontSize: 13, opacity: .7, marginBottom: 16 }}>受け入れ事業所の方はこちら</p>
+          <a href="https://lin.ee/HiSCSkf" target="_blank" rel="noopener noreferrer"
+            style={{ background: "#06C755", color: "#fff", fontWeight: 700, padding: "13px 28px", borderRadius: 8, fontSize: 14, textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 8 }}>
+            💬 事業所専用 公式LINEを追加する
+          </a>
+          <p style={{ fontSize: 12, opacity: .55, marginTop: 12 }}>
+            「いとあわせ」で検索、またはリンクから友だち追加をお願いします
+          </p>
         </div>
       </section>
 
