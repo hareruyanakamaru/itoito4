@@ -28,20 +28,6 @@ const rows: { label: string; value: React.ReactNode }[] = [
     ),
   },
   {
-    label: "電話番号",
-    value: (
-      <>
-        <a href="tel:090-9725-1572" className="text-amber-700 hover:underline">
-          090-9725-1572
-        </a>
-        <br />
-        <span className="text-stone-400 text-xs">
-          ※ お問い合わせはメールまたはお問い合わせフォームでも受け付けております。
-        </span>
-      </>
-    ),
-  },
-  {
     label: "メールアドレス",
     value: (
       <a
