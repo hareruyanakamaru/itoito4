@@ -43,14 +43,14 @@ export default function OperatorPage() {
           </div>
           <div className="text-center sm:text-left">
             <p className="text-amber-600 text-xs font-semibold tracking-widest uppercase mb-2">
-              itoito 代表 / 元公立中学校教師
+              絲 代表 / 元公立中学校教師
             </p>
             <h2 className="text-3xl font-extrabold text-stone-800 mb-1">
               中丸 晴留哉
             </h2>
             <p className="text-sm text-stone-400 mb-4">Nakamaru Haruruya</p>
             <p className="text-sm text-stone-500 leading-relaxed">
-              東京都江東区在住。元公立中学校教師として5年間勤務後、
+              元公立中学校教師として5年間勤務後、
               教育の可能性を広げるためitoitoを創業。
               「学校の外にも、本物の学びがある」を信じて行動し続けている。
             </p>
