@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback, useRef } from "react";
+import Link from "next/link";
 
 // ── チラ見え幅 ──────────────────────────────────────────────
 // PEEK: コンテンツ幅の外側に何px隣画像を見せるか
@@ -8,9 +9,25 @@ import { useState, useEffect, useCallback, useRef } from "react";
 const PEEK = 96;
 const GAP  = 10;  // スライド間の隙間（px）
 
-const slides = [
+type Slide = {
+  img: string;
+  fallbackBg: string;
+  badge?: string;
+  title?: string;
+  subtitle?: string;
+  href?: string;
+};
+
+const slides: Slide[] = [
   { img: "/images/hero/hero-1.jpg", fallbackBg: "from-amber-400 to-orange-500" },
-  { img: "/images/hero/hero-2.jpg", fallbackBg: "from-lime-400 to-green-600" },
+  {
+    img: "/images/farm-experience.jpg",
+    fallbackBg: "from-lime-400 to-green-600",
+    badge: "🌾 人気体験",
+    title: "田んぼで学ぶ農業体験",
+    subtitle: "土と命に触れる、本物の夏休み。",
+    href: "/experiences/12",
+  },
   { img: "/images/hero/hero-3.jpg", fallbackBg: "from-blue-400 to-cyan-600" },
   { img: "/images/hero/hero-4.jpg", fallbackBg: "from-rose-400 to-pink-600" },
 ];
@@ -118,14 +135,37 @@ export default function HeroCarousel() {
                   }}
                 >
                   {!imgErrors[ri] ? (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img
-                      src={slide.img}
-                      alt=""
-                      aria-hidden="true"
-                      onError={() => setImgErrors((e) => ({ ...e, [ri]: true }))}
-                      className="w-full h-full object-cover object-top"
-                    />
+                    <div className="relative w-full h-full">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={slide.img}
+                        alt=""
+                        aria-hidden="true"
+                        onError={() => setImgErrors((e) => ({ ...e, [ri]: true }))}
+                        className="w-full h-full object-cover object-top"
+                      />
+                      {slide.title && (
+                        <div className="absolute inset-0 bg-black/40 flex flex-col justify-end p-6 sm:p-8">
+                          {slide.badge && (
+                            <span className="inline-block text-xs font-bold bg-amber-400 text-stone-900 px-3 py-1 rounded-full mb-3 w-fit">
+                              {slide.badge}
+                            </span>
+                          )}
+                          <h2 className="text-white text-xl sm:text-3xl font-extrabold leading-tight mb-1">
+                            {slide.title}
+                          </h2>
+                          <p className="text-white/80 text-sm sm:text-base mb-4">{slide.subtitle}</p>
+                          {slide.href && (
+                            <Link
+                              href={slide.href}
+                              className="inline-block bg-amber-400 hover:bg-amber-500 text-stone-900 font-bold text-sm px-5 py-2 rounded-full w-fit transition-colors"
+                            >
+                              詳しく見る →
+                            </Link>
+                          )}
+                        </div>
+                      )}
+                    </div>
                   ) : (
                     <div className={`w-full h-full bg-gradient-to-br ${slide.fallbackBg}`} />
                   )}
